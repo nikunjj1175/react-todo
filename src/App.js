@@ -1,11 +1,14 @@
-
-import './App.css';
-import Todo from './Todo';
+import React from 'react';
+import "./App.css";
+import AppRouter from './Routes/AppRouter'
+import { AuthProvider } from './AuthContext';
 
 function App() {
     return (
-        <div className='App'>
-           <Todo /> 
+        <div className="App">
+            <AuthProvider>
+                <AppRouter />
+            </AuthProvider>
         </div>
     );
 }
