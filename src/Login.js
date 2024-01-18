@@ -12,10 +12,10 @@ function Login() {
     const getPassword = localStorage.getItem("passwordData");
 
     const handleLogin = (e) => {
+        // localStorage.setItem("emailData", "abc@gmail.com");
+        // localStorage.setItem("passwordData", "123");
         if (email.current.value === getEmail && password.current.value === getPassword)
             {
-            // localStorage.setItem("emailData", "abc@gmail.com");
-            // localStorage.setItem("passwordData", "123");
             setIsLoggedIn(true);
             navigate("/dashboard");
         }
