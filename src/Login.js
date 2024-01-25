@@ -12,8 +12,8 @@ function Login() {
     const getPassword = localStorage.getItem("passwordData");
 
     const handleLogin = (e) => {
-        localStorage.setItem("emailData", "abc@gmail.com");
-        localStorage.setItem("passwordData", "123");
+        // localStorage.setItem("emailData", "abc@gmail.com");
+        // localStorage.setItem("passwordData", "123");
         if (email.current.value === getEmail && password.current.value === getPassword)
             {
             setIsLoggedIn(true);
